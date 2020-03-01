@@ -1,0 +1,50 @@
+img{
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  display: block;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 100px;
+  background-color:#ffffff;
+}
+
+.myName {
+  width:100px;
+  margin: auto;
+  border: 3px solid none
+  ;
+  font-weight: bold;
+}
+
+.nav-link{
+  margin-right: 50px;
+}
+
+.wrapper > div{
+ width:800px;
+ margin: auto;
+ padding-top: 50px;
+ font-weight: bold;
+}
+.accessibility{
+  width:800px;
+ margin: auto;
+ padding-top: 50px;
+}
+
+#grids{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+#grids > div{
+  background:#eee;
+  padding:1em;
+  padding-bottom: none;
+}
+#grids > div:nth-child(odd){
+  background:#ddd;
+}
