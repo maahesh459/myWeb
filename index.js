@@ -41,7 +41,7 @@ function myFunction() {
     } 
 
          //Print results (and statement) to document, dependant on outcome
-         if (correctAnswers === 10) {
+    if (correctAnswers === 10) {
         document.getElementById("result").innerHTML = "Congratulations! You got all 10 answers correct";}
     else if (correctAnswers >= 5) {
         document.getElementById("result").innerHTML = "Congratulations! You got " + correctAnswers + " answers correct";}
@@ -55,8 +55,35 @@ function myFunction() {
 
         //Print correct answers to form
         document.getElementById("answers").innerHTML = "Correct answers: (1)John A Macdonald (2)Jawaharlal Nehru (3)Gregg Abott (4)Scott Morrison (5)Robert Walpole (6)Africa (7)India (8)Vatican City (9)Russia (10)Facebook ";
-
+        
         //Reset contents of form
         document.getElementById("quiz-form").reset();
+}
+
+
+// modal popup
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
 
